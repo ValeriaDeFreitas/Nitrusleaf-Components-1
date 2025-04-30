@@ -1,0 +1,90 @@
+/* Início estilos gerais */
+
+/* Importando fontes do Google Fonts (https://fonts.google.com) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --cor-button-primary: #65B741; /* Button Primary*/
+  --cor-button-secondary: #FBF6EE; /* Button Secundary */
+  --cor-button-google:#FFFFFF;/*Button Color Google*/
+  --cor-text-primary: #FFFFFF; /* Text Button Primary */
+  --cor-text-secondary: #000000; /* Text Button Secundary */
+  --cor-text-google:#000000;/*Text Button Google*/
+  --cor-border-secondary:#49A010;/* Border Button Secundary */
+  --cor-border-google: #677283;/* Border Button Google */
+  --cor-conteiner: #FBF6EE; /* Cor do conteiner */
+  --cor-input:#FBF6EE;/* Cor da input */
+  --cor-radio: #49A010;/*Cor do radio button*/
+  --text-cadastro: #FFFBF2;/*Cor do texto dos cadastros*/
+  --cor-button-excluir:#EE2727/*Cor do botão de excluir*/
+}
+
+::placeholder {
+  font-family: "Poppins";
+  color: var(--label-color);
+}
+
+.title {
+  font-family: "Poppins";
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Início Form */
+input {
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+.formPrimary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputPrimary {
+  font-family: "Poppins";
+  color: var(--fourth-color);
+  width: 100%;
+  border: none;
+}
+
+.inputPrimary:focus {
+  outline: 0.15rem solid var(--primary-color);
+}
+
+.btnPrimary {
+  font-family: "Poppins";
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  height: 3rem;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.btnPrimary:hover {
+  background-color: var(--primary-hover);
+}
+/* Fim Form */
+
+/* Fim estilos gerais */
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+.title {
+  font-size: 0.8rem;
+}
+}

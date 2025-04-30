@@ -1,0 +1,39 @@
+.menuButtons {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 16px; 
+    justify-items: center; 
+    align-items: center; 
+    margin-top: 32px; 
+}
+
+
+.btnPrimary{
+    width: 410px;
+    height:60px ;
+    background-color: var(--cor-button-primary);
+    color: var(--cor-text-primary);
+    border-radius: 35px;
+    border-color: var(--cor-button-primary);
+}
+
+.btnSecondary{
+    width: 410px;
+    height:60px ;
+    background-color: var(--cor-button-secondary);
+    color: var(--cor-text-secondary);
+    border-radius: 35px;
+    border-color: var(--cor-border-secondary);
+}
+.separator{
+    size: 0.2px;
+}
+
+.btnGoogle{
+    width: 410px;
+    height:60px ;
+    background-color: var(--cor-button-google);
+    color: var(--cor-text-google);
+    border-radius: 35px;
+    border-color: var(--cor-border-google);
+}
