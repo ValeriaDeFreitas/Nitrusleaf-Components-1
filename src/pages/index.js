@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import MenuButtons from "@/components/initialPage";
 import Menu from "@/components/Menu";
 import CreateContent from "@/components/CreateContent";
-import {ButtonPrimary,  ButtonSecondary, ButtonThirty, ButtonFourth, ButtonFifth, ButtonSixth, ButtonSeventh, ButtonEight } from "@/components/Buttons"
+import {ButtonPrimary,  ButtonSecondary, ButtonThirty, ButtonFourth, ButtonFifth, ButtonSixth, ButtonSeventh, ButtonEsc, ButtonUpload, ButtonDrone } from "@/components/Buttons"
 
 export default function Home() {
   return (
@@ -21,14 +21,16 @@ export default function Home() {
         <link rel="icon" href="/" />
       </Head>
       <main>
-      <ButtonPrimary/>
+      {/* <ButtonPrimary/>
       <ButtonSecondary/>
       <ButtonThirty/>
       <ButtonFifth/>
       <ButtonFourth/>
       <ButtonSixth/>
       <ButtonSeventh/> 
-      <ButtonEight/>   
+      <ButtonEsc/>
+      <ButtonUpload/>*/}
+      <ButtonDrone/>    
   
       </main>
     </>

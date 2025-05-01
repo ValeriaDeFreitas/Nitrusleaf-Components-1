@@ -100,24 +100,59 @@
   border-radius: 10px;
 }
 
-.ButtonEight {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+.ButtonUpload {
+  display: grid;
   align-items: center;
+  justify-content: space-around;
   width: 528px;
   height: 172px;
-  left: 187px;
-  top: 556px;
   background: #65b741;
   border-radius: 20px;
   border: none;
 }
 
+.ButtonEsc {
+  display: flex;
+  /* align-items: center;
+  justify-content: space-around; */
+  width: 528px;
+  height: 172px;
+  background: #65b741;
+  border-radius: 20px;
+  border: none;
+}
+
+/* .DivImage {
+  display: grid;
+  justify-content: space-evenly;
+} */
+
 .Scan {
   width: 246px;
-  height: 121px;
-  align-items: center;
-  text-align: center;
+  height: 60px;
+  font-family: "Kantumruy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 72px;
+  /* display: grid;
+  align-items: center; */
   color: #fbf6ee;
 }
+
+.ButtonDrone {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 528px;
+  height: 172px;
+  background: #65b741;
+  border-radius: 20px;
+  border: none;
+}
+
+.imgDrone{
+width: 209,9px;
+height: 200px;
+}
+
