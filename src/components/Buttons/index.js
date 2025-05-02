@@ -1,5 +1,7 @@
-import styles from "@/components/Buttons/Buttons.module.css"
-import { useRouter } from 'next/router';
+import styles from "@/components/Buttons/Buttons.module.css";
+import { useRouter } from "next/router";
+import { useState } from "react";
+
 
 /*Botão de Propriedade */
 function ButtonPrimary() {
@@ -98,7 +100,7 @@ function ButtonFifth() {
     <div className={styles.buttonConteiner}>
       <button
         onClick={handleExc}
-        className={`${styles.button} ${styles.ButtonFifth}`}
+        className={`${styles.ButtonFifth}`}
       >
         text
       </button>
@@ -163,10 +165,13 @@ function ButtonEsc() {
         onClick={handleEsc}
         className={`${styles.button} ${styles.ButtonEsc}`}
       >
-        <p className={styles.Scan}>Escanear</p>
-        <p className={styles.Scan}>Folha</p>
+        <p className={styles.Scan}>Escanear <br></br> Folha</p>
         <div className={styles.DivImage}>
-        <img src="/images/Vector_escan.png" alt="" className={styles.img}></img>
+          <img
+            src="/images/Vector_escan.png"
+            alt=""
+            className={styles.img}
+          ></img>
         </div>
       </button>
     </div>
@@ -188,8 +193,7 @@ function ButtonUpload() {
         onClick={handleUpl}
         className={`${styles.button} ${styles.ButtonUpload}`}
       >
-        <p className={styles.Scan}>Fazer</p>
-        <p className={styles.Scan}>Upload</p>
+        <p className={styles.Scan}>Fazer <br></br> Upload</p>
       </button>
     </div>
   );
@@ -211,12 +215,101 @@ function ButtonDrone() {
         className={`${styles.button} ${styles.ButtonDrone}`}
       >
         <p className={styles.Scan}>Drone</p>
-        <img src="/images/Vector_drone.png" alt="" className={styles.imgDrone}></img>
+        <img
+          src="/images/Vector_drone.png"
+          alt=""
+          className={styles.imgDrone}
+        ></img>
+      </button>
+    </div>
+  );
+}
+
+/*Botão escaneando */
+export default function ButtonEscanear() {
+  const router = useRouter();
+  const [escaneando, setEscaneando] = useState(false);
+  const [validado, setValidado] = useState(false);
+
+  const handleEscanear = (e) => {
+    e.preventDefault();
+
+    setEscaneando(true);
+
+    setTimeout(() => {
+      setEscaneando(false);
+      setValidado(true);
+
+      setTimeout(() => {
+        router.push('/');
+      }, 2000);
+    }, 3000);
+  };
+
+  return (
+    <div className={styles.ButtonConteiner}>
+      <button
+        onClick={handleEscanear}
+        className={`${styles.button} ${styles.ButtonEscanear}`}
+        disabled={validado || escaneando}
+      >
+        {validado ? (
+          <>
+            <span>ESCANEADO</span>
+            <span>
+              <img src="/images/eos-icons_loading.png" alt="ícone" width="20" height="20" />
+            </span>
+          </>
+        ) : escaneando ? (
+          <>
+            <span>ESCANEANDO</span>
+            <span className={styles.loader} />
+          </>
+        ) : (
+          <>
+            <span>ESCANEAR</span>
+            <span />
+          </>
+        )}
+      </button>
+    </div>
+  );
+}
+
+/*Botão de voltar(variant) */
+function ButtonEight() {
+  const router = useRouter();
+
+  const handleVoltVar = (e) => {
+    e.preventDefault();
+    router.push("/excluir");
+  };
+
+  return (
+    <div className={styles.buttonConteiner}>
+      <button
+        onClick={handleVoltVar}
+        className={`${styles.button} ${styles.ButtonEight}`}
+      >
+        <img src="/images/Vector.png" alt="" className={styles.imgVolt}></img>
+        <p className={styles.volt}>Voltar</p>
       </button>
     </div>
   );
 }
 
 
-
-export {ButtonPrimary, ButtonSecondary, ButtonThirty, ButtonFourth, ButtonFifth, ButtonSixth, ButtonSeventh, ButtonEsc, ButtonUpload, ButtonDrone};
+export {
+  ButtonPrimary,
+  ButtonSecondary,
+  ButtonThirty,
+  ButtonFourth,
+  ButtonFifth,
+  ButtonSixth,
+  ButtonSeventh,
+  ButtonEsc,
+  ButtonUpload,
+  ButtonDrone,
+  ButtonEscanear,
+  ButtonEight
+};

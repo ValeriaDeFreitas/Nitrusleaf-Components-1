@@ -6,7 +6,20 @@ import Footer from "@/components/Footer";
 import MenuButtons from "@/components/initialPage";
 import Menu from "@/components/Menu";
 import CreateContent from "@/components/CreateContent";
-import {ButtonPrimary,  ButtonSecondary, ButtonThirty, ButtonFourth, ButtonFifth, ButtonSixth, ButtonSeventh, ButtonEsc, ButtonUpload, ButtonDrone } from "@/components/Buttons"
+import {
+  ButtonPrimary,
+  ButtonSecondary,
+  ButtonThirty,
+  ButtonFourth,
+  ButtonFifth,
+  ButtonSixth,
+  ButtonSeventh,
+  ButtonEsc,
+  ButtonUpload,
+  ButtonDrone,
+  ButtonEscanear,
+  ButtonEight,
+} from "@/components/Buttons";
 
 export default function Home() {
   return (
@@ -28,10 +41,17 @@ export default function Home() {
       <ButtonFourth/>
       <ButtonSixth/>
       <ButtonSeventh/> 
+      <br></br>
       <ButtonEsc/>
-      <ButtonUpload/>*/}
-      <ButtonDrone/>    
-  
+      <br></br>
+      <ButtonUpload/>
+      <br></br>
+      <ButtonDrone/>
+      <br></br> 
+      <ButtonEscanear/>
+      <br></br>
+      <ButtonEight />*/} 
+      <Footer/> 
       </main>
     </>
   );

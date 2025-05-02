@@ -1,13 +1,13 @@
 /*Buttons*/
-.ButtonConteiner {
-  display: flex;
+/* .ButtonConteiner {
+  display: flex;  
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100vh;
+   width: 100%;
+  height: 100vh; 
   font-family: "Poppins", sans-serif;
-}
+}  */
 
 .Button {
   width: 100%;
@@ -101,11 +101,11 @@
 }
 
 .ButtonUpload {
-  display: grid;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  width: 528px;
-  height: 172px;
+  width: 300px;
+  height: 92px;
   background: #65b741;
   border-radius: 20px;
   border: none;
@@ -113,8 +113,8 @@
 
 .ButtonEsc {
   display: flex;
-  /* align-items: center;
-  justify-content: space-around; */
+  justify-content: space-evenly;
+  align-items: center;
   width: 528px;
   height: 172px;
   background: #65b741;
@@ -128,15 +128,11 @@
 } */
 
 .Scan {
-  width: 246px;
-  height: 60px;
   font-family: "Kantumruy";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 72px;
-  /* display: grid;
-  align-items: center; */
   color: #fbf6ee;
 }
 
@@ -151,8 +147,95 @@
   border: none;
 }
 
-.imgDrone{
-width: 209,9px;
-height: 200px;
+.imgDrone {
+  width: 209, 9px;
+  height: 100px;
 }
 
+.ButtonConteiner {
+  display: flex;
+  justify-content: center;
+}
+
+.ButtonEscanear {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: sans-serif;
+  transition: opacity 0.3s ease;
+}
+
+.ButtonEscanear:disabled {
+  pointer-events: none;
+}
+
+.loader {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  border: 3px solid #c3e6cb;
+  border-top: 3px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.val {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(/images/eos-icons_loading.png);
+  border-radius: 50%;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ButtonEight {
+  width: 150px;
+  height: 45px;
+  background-color: var(--cor-button-primary);
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.volt {
+  color: var(--text-cadastro);
+  font-size: 20px;
+}
+
+.imgVolt {
+  width: 50px;
+  height: 30px;
+}
