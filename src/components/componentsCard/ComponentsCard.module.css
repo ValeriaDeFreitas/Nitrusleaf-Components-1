@@ -1,0 +1,91 @@
+.CardPrimary {
+    background-color: var(--cor-card);
+    width: 946px;
+    height: 720px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--cor-border-secondary);
+}
+
+.CardInternoPrimary{
+    width: 918px;
+    height: 685px;
+    border-radius: 20px;
+    opacity: 10%;
+    background-color: var(--cor-interna-cards);
+}
+
+.CardSecondary{
+    background-color: var(--cor-card);
+    width: 528px;
+    height: 352px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--cor-border-secondary);
+}
+
+.CardInternoSecondary{
+    width: 494px;
+    height: 316px;
+    border-radius: 20px;
+    opacity: 10%;
+    background-color: var(--cor-interna-cards);
+}
+
+.CardThirty{
+    background-color: var(--cor-card);
+    width: 482px;
+    height: 383px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--cor-border-secondary);
+}
+
+.CardInternoThirty{
+    width: 450px;
+    height: 347px;
+    border-radius: 20px;
+    opacity: 10%;
+    background-color: var(--cor-interna-cards);
+}
+
+.CardFourth{
+    background-color: var(--cor-card);
+    width: 398px;
+    height: 352px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--cor-border-secondary);
+}
+
+.CardInternoFourth{
+    width: 372.37px;
+    height: 320px;
+    border-radius: 20px;
+    opacity: 10%;
+    background-color: var(--cor-interna-cards);
+}
+
+.CardLeg{
+    background-color: var(--cor-card);
+    width: 366px;
+    height: 307px;
+    border-radius: 20px;
+    border: 2px solid var(--cor-border-secondary);
+}
+
+.CardDiagnostico{
+    background-color: var(--cor-card);
+    width: 873px;
+    height: 631px;
+    border-radius: 20px;
+    border: 2px solid var(--cor-border-secondary);
+}

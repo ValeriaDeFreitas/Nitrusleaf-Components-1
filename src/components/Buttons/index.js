@@ -144,7 +144,7 @@ function ButtonSeventh() {
         onClick={handleVolt}
         className={`${styles.button} ${styles.ButtonSeventh}`}
       >
-        <img src="/images/Vector.png" alt=""></img>
+        <img src="/images/Vector.png" alt="" className={styles.imgVolt}></img>
       </button>
     </div>
   );
@@ -165,12 +165,12 @@ function ButtonEsc() {
         onClick={handleEsc}
         className={`${styles.button} ${styles.ButtonEsc}`}
       >
-        <p className={styles.Scan}>Escanear <br></br> Folha</p>
+        <p className={styles.Text}>Escanear <br></br> Folha</p>
         <div className={styles.DivImage}>
           <img
             src="/images/Vector_escan.png"
             alt=""
-            className={styles.img}
+            className={styles.imgScan}
           ></img>
         </div>
       </button>
@@ -193,7 +193,7 @@ function ButtonUpload() {
         onClick={handleUpl}
         className={`${styles.button} ${styles.ButtonUpload}`}
       >
-        <p className={styles.Scan}>Fazer <br></br> Upload</p>
+        <p className={styles.Text}>Fazer <br></br> Upload</p>
       </button>
     </div>
   );
@@ -214,7 +214,7 @@ function ButtonDrone() {
         onClick={handleDrone}
         className={`${styles.button} ${styles.ButtonDrone}`}
       >
-        <p className={styles.Scan}>Drone</p>
+        <p className={styles.Drone}>Drone</p>
         <img
           src="/images/Vector_drone.png"
           alt=""
