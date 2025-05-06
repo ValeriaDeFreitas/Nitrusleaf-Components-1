@@ -1,0 +1,22 @@
+.containerScrollSecondary {
+    background-color: var(--cor-card);
+    display: grid;
+    grid-auto-rows: min-content;    
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 619px;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 500px;
+}
+
+.CardSecondary {
+    padding: 1rem;
+    min-height: 100px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+

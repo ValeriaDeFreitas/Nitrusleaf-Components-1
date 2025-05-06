@@ -89,3 +89,19 @@
     border-radius: 20px;
     border: 2px solid var(--cor-border-secondary);
 }
+
+.CardScrollPrimary{
+    background-color: var(--cor-card);
+    width: 419px;
+    height: 198px;
+    border-radius: 20px;
+    border: 2px solid var(--cor-border-secondary);
+}
+
+.CardScrollSecondary{
+    background-color: var(--cor-card);
+    width: 856px;
+    height: 138px;
+    border-radius: 20px;
+    border: 2px solid var(--cor-border-secondary);
+}

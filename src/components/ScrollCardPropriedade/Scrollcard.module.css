@@ -1,0 +1,41 @@
+.containerScroll {
+    display: grid;
+    grid-auto-rows: min-content;    
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 619px;
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 500px;
+}
+
+.Card {
+    padding: 1rem;
+    min-height: 100px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.containerScroll::-webkit-scrollbar {
+    width: 15px; /* Largura da barra de rolagem vertical */
+  }
+  
+  .containerScroll::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Cor do fundo da trilha do scroll */
+    border-radius: 10px;
+  }
+  
+  .containerScroll::-webkit-scrollbar-thumb {
+    background-color: #65B741; /* Cor da "alça" do scroll */
+    border-radius: 10px;
+    border: 2px solid transparent; /* Espaçamento interno */
+    background-clip: content-box;
+  }
+  
+  .containerScroll::-webkit-scrollbar-thumb:hover {
+    background-color: var(--cor-border-secondary); /* Cor ao passar o mouse */
+  }
+  
