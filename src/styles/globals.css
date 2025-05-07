@@ -1,7 +1,6 @@
 /* Início estilos gerais */
 
 /* Importando fontes do Google Fonts (https://fonts.google.com) */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
 
 * {
   margin: 0;
@@ -11,6 +10,7 @@
 }
 
 :root {
+  /* Estilos Gerais  */
   --cor-button-primary: #65B741; /* Button Primary*/
   --cor-button-secondary: #FBF6EE; /* Button Secundary */
   --cor-button-google:#FFFFFF;/*Button Color Google*/
@@ -25,7 +25,19 @@
   --text-cadastro: #FFFBF2;/*Cor do texto dos cadastros*/
   --cor-button-excluir:#EE2727;/*Cor do botão de excluir*/
   --cor-card: #FBF6EE; /*Cor dos cards*/
-  --cor-interna-cards: #FFB534;
+  --cor-interna-cards: #FFB534; /*Opacity cards*/
+  /* Status  */
+  --status-laranja:#FF5C00;
+  --status-azul:#1400FF;
+  --staus-cinza:#95969F;
+  /* Legendas */
+  --legenda-verm: #FF2318;
+  --legenda-laraj: #FF7D00;
+  --legenda-amar: #F2EF00;
+  --legenda-verd-claro:#8CCA00;
+  --legenda-verd-escuro:#116E1F;
+
+
 }
 
 

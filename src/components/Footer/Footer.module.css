@@ -1,12 +1,10 @@
-.svg-mask {
-  width: 800px;
-  height: 600px;
+.SvgMask {
+  display: flex;
+  width: 100%;
+  height: 200px;
   background: linear-gradient(135deg, #e86b2e, #fcb431);
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
+  mask-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 2407 2000' xmlns='http://www.w3.org/2000/svg'><path d='m 551 0 c -797 -400 -1168.6765 387.0147 -1794.9947 339.1709 c -230.5199 -21.7472 -282 -113 -626.3182 -395.7983 l 30 1838 l 2407 6 z' fill='white'/></svg>");
   mask-repeat: no-repeat;
-  -webkit-mask-position: center;
+  mask-size: cover;
   mask-position: center;
 }
-

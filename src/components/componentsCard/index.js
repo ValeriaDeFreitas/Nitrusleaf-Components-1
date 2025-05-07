@@ -62,51 +62,52 @@ function CardSecondary() {
       </div>
     );
   };
-
-function CardScrollSecondary({ title, status, percentage }) {
-  return (
-    <div className="flex justify-between items-center p-4 rounded-lg border border-green-600 bg-neutral-50 shadow-sm">
-      <div>
-        <h3 className="text-lg font-semibold">{title}</h3>
-        <div className="flex items-center gap-2 mt-2">
-          <span className="h-3 w-5 rounded-full bg-orange-500 inline-block" />
-          <span className="text-sm">{status}</span>
-        </div>
-      </div>
-
-      <div className="flex flex-col items-end justify-between h-full">
-        <span className="text-sm text-gray-400">Ver</span>
-
-        <div className="relative w-10 h-10 mt-2">
-          <svg className="absolute top-0 left-0" width="40" height="40">
-            <circle
-              cx="20"
-              cy="20"
-              r="18"
-              stroke="#e5e7eb" 
-              strokeWidth="4"
-              fill="none"
-            />
-            <circle
-              cx="20"
-              cy="20"
-              r="18"
-              stroke="red"
-              strokeWidth="4"
-              fill="none"
-              strokeDasharray={`${(percentage / 100) * 113}, 113`}
-              transform="rotate(-90 20 20)"
-            />
-          </svg>
-          <div className="absolute inset-0 flex items-center justify-center text-sm font-bold">
-            {percentage}%
+  
+  function CardScrollSecondary({ title, status, percentage }) {
+    const strokeDash = `${(percentage / 100) * 113}, 113`;
+    return (
+      <div className={styles.CardScrollSecondary}>
+        <div>
+          <h3 className={styles.CardTitle}>{title}</h3>
+          <div className={styles.StatusContainer}>
+            <span className={styles.StatusDot} />
+            <span className={styles.StatusText}>{status}</span>
           </div>
         </div>
-        <button className="text-sm font-semibold mt-2">Relatórios &gt;</button>
+  
+        <div className={styles.Actions}>
+          <span className={styles.ViewLabel}>Ver</span>
+  
+          <div className={styles.ProgressContainer}>
+            <svg className={styles.ProgressSvg} width="40" height="40">
+              <circle
+                cx="20"
+                cy="20"
+                r="18"
+                stroke="#e5e7eb"
+                strokeWidth="4"
+                fill="none"
+              />
+              <circle
+                cx="20"
+                cy="20"
+                r="18"
+                stroke="red"
+                strokeWidth="4"
+                fill="none"
+                strokeDasharray={strokeDash}
+                transform="rotate(-90 20 20)"
+              />
+            </svg>
+            <div className={styles.ProgressText}>{percentage}%</div>
+          </div>
+  
+          <button className={styles.ReportButton}>Relatórios &gt;</button>
+        </div>
       </div>
-    </div>
-  );
-}
+    );
+  }
+    
 
 
 

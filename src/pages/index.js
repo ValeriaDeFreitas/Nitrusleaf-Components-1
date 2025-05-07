@@ -5,10 +5,11 @@ import LoginContent from "@/components/LoginContent";
 import Footer from "@/components/Footer";
 import MenuButtons from "@/components/initialPage";
 import Menu from "@/components/Menu";
-import PeCard from "@/components/ScrollCardPropriedade";
 import {CardScrollPrimary, CardScrollSecondary} from "@/components/componentsCard"
 import ScrollCard from "@/components/ScrollCardPropriedade";
 import ScrollCardTalhao from "@/components/ScrollCardTalhao";
+import Labels from "@/components/Labels";
+import Button, { ButtonPrimary } from "@/components/Buttons";
 export default function Home() {
   return (
     <>
@@ -22,8 +23,7 @@ export default function Home() {
         <link rel="icon" href="/" />
       </Head>
       <main>
-   {/* <ScrollCard/>  */}
-   <ScrollCardTalhao/>
+      <ButtonPrimary/>
       </main>
     </>
   );

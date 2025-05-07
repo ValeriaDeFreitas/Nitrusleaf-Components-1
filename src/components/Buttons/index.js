@@ -4,12 +4,12 @@ import { useState } from "react";
 
 
 /*Botão de Propriedade */
-function ButtonPrimary() {
+function ButtonPrimary({ text = "text", route = "/propriedade" }) {
   const router = useRouter();
 
   const handleProp = (e) => {
     e.preventDefault();
-    router.push("/propriedade");
+    router.push(route);
   };
 
   return (
@@ -18,11 +18,12 @@ function ButtonPrimary() {
         onClick={handleProp}
         className={`${styles.button} ${styles.Button}`}
       >
-        text
+        {text}
       </button>
     </div>
   );
 }
+
 
 /*Botão de Próximo */
 function ButtonSecondary() {
