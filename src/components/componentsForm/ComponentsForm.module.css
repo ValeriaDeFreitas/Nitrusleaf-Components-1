@@ -1,231 +1,257 @@
 /*Componentes Inputs*/
 
 .inputContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100vh;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .inputCard {
-    background: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    border-radius: 1rem;
-  }
-  
-  
-  .inputPrimary {
-    width: 100%;
-    width: 595px;
-    height: 60px;
-    padding: 0 1rem;
-    margin-bottom: 1.5rem;
-    border: 2px solid var(--cor-border-secondary);
-    border-radius: 8px;
-    background-color: var(--cor-input);
-    font-size: 1rem;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
 
-  .inputsSecondary{
-    width: 100%;
-    width: 580px;
-    height: 60px;
-    padding: 0 1rem;
-    margin-bottom: 1.5rem;
-    border: 2px solid var(--cor-border-secondary);
-    border-radius: 8px;
-    background-color: var(--cor-input);
-    font-size: 1rem;
-  }
+.inputCard {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  border-radius: 1rem;
+}
 
-  .selectLabel {
-    color: #4B2E14;  /* Marrom escuro */
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  .customSelect {
-    background-color: var(--cor-conteiner);   
-    border: 2px solid var(--cor-radio);   
-    border-radius: 6px;
-    padding: 10px;
-    font-size: 16px;
-    color: #4B2E14;
-    appearance: none;
-    background-image: url("/images/Vector 32.png");
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    background-size: 12px;
-    width: 275px;
-  }
-  
-  .customSelect:focus {
-    outline: none;
-    border-color: #388E3C;
-  }
-  
-  .inputsThirdy{
-    width: 100%;
-    width: 390px;
-    height: 60px;
-    padding: 0 1rem;
-    margin-bottom: 1.5rem;
-    border: 2px solid var(--cor-border-secondary);
-    border-radius: 8px;
-    background-color: var(--cor-input);
-    font-size: 1rem;
-  }
+/* Input Logradouro */
+.inputPrimary {
+  width: 100%;
+  width: 592px;
+  height: 60px;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--cor-border-secondary);
+  border-radius: 8px;
+  background-color: var(--cor-input);
+  font-size: 1rem;
+}
 
-  .inputsFourth{
-    width: 100%;
-    width: 388px;
-    height: 60px;
-    padding: 0 1rem;
-    margin-bottom: 1.5rem;
-    border: 2px solid var(--cor-border-secondary);
-    border-radius: 8px;
-    background-color: var(--cor-input);
-    font-size: 1rem;
-  }
+/* Input Nome, Nome Talhao, CEP, Cidade, Bairro, Nome propriedade, Telefone, CEL */
+.inputsSecondary {
+  width: 100%;
+  width: 390px;
+  height: 60px;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--cor-border-secondary);
+  border-radius: 8px;
+  background-color: var(--cor-input);
+  font-size: 1rem;
+}
 
-  .inputsFifth{
-    width: 100%;
-    width: 344px;
-    height: 60px;
-    padding: 0 1rem;
-    margin-bottom: 1.5rem;
-    border: 2px solid var(--cor-border-secondary);
-    border-radius: 8px;
-    background-color: var(--cor-input);
-    font-size: 1rem;
-  }
+/* Menu dropbox */
+.selectLabel {
+  color: #4b2e14; /* Marrom escuro */
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
-  .inputsSixth{
-    width: 100%;
-    width: 330px;
-    height: 60px;
-    padding: 0 1rem;
-    margin-bottom: 1.5rem;
-    border: 2px solid var(--cor-border-secondary);
-    border-radius: 8px;
-    background-color: var(--cor-input);
-    font-size: 1rem;
-  }
+.customSelect {
+  background-color: var(--cor-conteiner);
+  border: 2px solid var(--cor-radio);
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
+  color: #4b2e14;
+  appearance: none;
+  background-image: url("/images/Vector 32.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+  width: 275px;
+}
 
-  .inputsSeventh{
-    width: 100%;
-    width: 276px;
-    height: 60px;
-    padding: 0 1rem;
-    margin-bottom: 1.5rem;
-    border: 2px solid var(--cor-border-secondary);
-    border-radius: 8px;
-    background-color: var(--cor-input);
-    font-size: 1rem;
-  }
+.customSelect:focus {
+  outline: none;
+  border-color: #388e3c;
+}
+/* Input CNPJ/CPF */
+.inputsThirdy {
+  width: 100%;
+  width: 344px;
+  height: 60px;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--cor-border-secondary);
+  border-radius: 8px;
+  background-color: var(--cor-input);
+  font-size: 1rem;
+}
 
-  .inputsEighth{
-    width: 100%;
-    width: 196px;
-    height: 60px;
-    padding: 0 1rem;
-    margin-bottom: 1.5rem;
-    border: 2px solid var(--cor-border-secondary);
-    border-radius: 8px;
-    background-color: var(--cor-input);
-    font-size: 1rem;
-  }
+/* Input Endereço */
+.inputsFourth {
+  width: 100%;
+  width: 330px;
+  height: 60px;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--cor-border-secondary);
+  border-radius: 8px;
+  background-color: var(--cor-input);
+  font-size: 1rem;
+}
+/* Input Senha */
+.inputFifth {
+  width: 100%;
+  width: 387px;
+  height: 60px;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--cor-border-secondary);
+  border-radius: 8px;
+  background-color: var(--cor-input);
+  font-size: 1rem;
+}
+/* Input Numero */
+.inputSixth {
+  width: 100%;
+  width: 196px;
+  height: 60px;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--cor-border-secondary);
+  border-radius: 8px;
+  background-color: var(--cor-input);
+  font-size: 1rem;
+}
 
-  .inputsNinth{
-    width: 100%;
-    width: 170px;
-    height: 60px;
-    padding: 0 1rem;
-    margin-bottom: 1.5rem;
-    border: 2px solid var(--cor-border-secondary);
-    border-radius: 8px;
-    background-color: var(--cor-input);
-    font-size: 1rem;
-  }
-  /*Radio Button*/
+/* Input Cidade */
+.inputSeventh {
+  width: 100%;
+  width: 170px;
+  height: 60px;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--cor-border-secondary);
+  border-radius: 8px;
+  background-color: var(--cor-input);
+  font-size: 1rem;
+}
+/* Input Sobrenome, Nome, Telefone, Celular, Senha */
+.inputEighth {
+  width: 100%;
+  width: 276px;
+  height: 60px;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--cor-border-secondary);
+  border-radius: 8px;
+  background-color: var(--cor-input);
+  font-size: 1rem;
+}
+/* Input Email do perfil do usuario */
+.inputNinth {
+  width: 100%;
+  width: 388px;
+  height: 60px;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--cor-border-secondary);
+  border-radius: 8px;
+  background-color: var(--cor-input);
+  font-size: 1rem;
+}
 
-  .Text{
-    font-size: 24px;
-  }
+/* Input talhao */
+.inputTenth {
+  width: 100%;
+  width: 199px;
+  height: 60px;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--cor-border-secondary);
+  border-radius: 8px;
+  background-color: var(--cor-input);
+  font-size: 1rem;
+}
 
-  .radioConteiner{
-    display: flex;
-    justify-content: center;
-  }
+/* Input pe */
+.inputEleventh {
+  width: 100%;
+  width: 156px;
+  height: 60px;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--cor-border-secondary);
+  border-radius: 8px;
+  background-color: var(--cor-input);
+  font-size: 1rem;
+}
 
-  .radioGroup {
-    display: flex;
-    flex-direction: row; /* Alinha os radio buttons na horizontal */
-    gap: 2rem; /* Espaçamento entre eles */
-    margin: 2rem;
+/* Adicionar relátorio */
+.inputTwelfth {
+  width: 100%;
+  width: 369px;
+  height: 60px;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--cor-border-secondary);
+  border-radius: 8px;
+  background-color: var(--cor-input);
+  font-size: 1rem;
+}
 
-    /* background-color: black;  */
-  }
-  
-  .radioItem {
-  font-family: 'Poppins', sans-serif;
+/*Radio Button*/
+.Text {
+  font-size: 24px;
+}
+/* Input radioButton */
+.radioConteiner {
+  display: flex;
+  justify-content: center;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: row; /* Alinha os radio buttons na horizontal */
+  gap: 2rem; /* Espaçamento entre eles */
+  margin: 2rem;
+
+  /* background-color: black;  */
+}
+
+.radioItem {
+  font-family: "Poppins", sans-serif;
   font-size: 1.2rem;
   color: var(--text-cadastro);
   display: flex;
   align-items: center;
   gap: 0.5rem;
   border-color: var(--cor-border-secondary);
+}
 
-  }
-  
-  .radioItem input[type="radio"] {
-    width: 25px;
-    height: 25px;
-    accent-color: var(--cor-radio); /* Cor verde do radio selecionado */
-    border:0.5px var(--cor-radio);
-  }
-  
-  .buttonConteiner{
-    display: flex;
-    justify-content: center;
-  }
+.radioItem input[type="radio"] {
+  width: 25px;
+  height: 25px;
+  accent-color: var(--cor-radio); /* Cor verde do radio selecionado */
+  border: 0.5px var(--cor-radio);
+}
 
-  
-  /* RESPONSIVIDADE */
-  @media (max-width: 1200px) {
-  
-    .inputPrimary {
-      max-width: 350px;
-      height: 50px;
-    }
-    .radioGroup{
-      max-width: 350px;
-      height: 50px;
-      
-    }
-  }
-  
-  @media (max-width: 768px) {
-    
-  
-    .inputPrimary{
-      max-width: 300px;
-      height: 50px;
-    }
+.buttonConteiner {
+  display: flex;
+  justify-content: center;
+}
 
-    .radioGroup{
-      max-width: 300px;
-      height: 50px;
-    
-    }
+/* RESPONSIVIDADE */
+/* @media (max-width: 1200px) {
   
+  .radioGroup {
+    max-width: 350px;
+    height: 50px;
   }
-  /* FIM RESPONSIVIDADE */
-  
+}
+
+@media (max-width: 768px) {
+
+  .radioGroup {
+    max-width: 300px;
+    height: 50px;
+  }
+} */
